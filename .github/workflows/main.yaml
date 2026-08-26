@@ -21,8 +21,8 @@ jobs:
       - name: Build and push
         uses: docker/build-push-action@v4
         with:
-          context: ./DL/DS6_MLOps/MLOps2_serving/
-          file: ./DL/DS6_MLOps/MLOps2_serving/dockerfile
+          context: ./
+          file: ./dockerfile
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/my-ml-app:latest
 
